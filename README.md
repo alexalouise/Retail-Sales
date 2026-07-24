@@ -25,24 +25,3 @@ This repository contains all the necessary resources and source code to replicat
   * Data Sorting (`ORDER BY`)
   * Custom Conditional Calculations (`CASE WHEN`)
   * Type Casting & Formatting (`CAST`)
-
----
-
-## 📊 Database Schema & Table Setup
-
-```sql
-DROP TABLE IF EXISTS retail_sales;
-
-CREATE TABLE retail_sales (
-    transactions_id INT PRIMARY KEY,
-    sale_date DATE,
-    sale_time TIME,
-    customer_id INT,
-    gender VARCHAR(15),
-    age INT,
-    category VARCHAR(25),
-    quantity INT,
-    price_per_unit NUMERIC(10,2),
-    cogs NUMERIC(10,2),
-    total_sale NUMERIC(10,2)
-);
